@@ -1,4 +1,4 @@
 <?php
-$season=array("summer","winter","spring","autumn");
-echo"Season are:$season[0],$season[1],$season[2] and $season[3]";
+$name=array("Sameer","Hero","Super","Cutie");
+echo"Season are:$name[0],$name[1],$name[2] and $name[3]";
 ?>
