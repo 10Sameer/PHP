@@ -13,7 +13,7 @@ echo "Factorial of $num is: " . $factorial;
 
 // reverse a string
 <?php
-$str = "PHP";  
+$str = "Hello, World!";  
 $reversed = "";
 $length = strlen($str);
 $i = $length - 1;
