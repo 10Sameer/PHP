@@ -18,3 +18,31 @@
     <p style="color: red;"><?php echo $error; ?></p>
 </body>
 </html>
+
+
+<?php
+$error = "";
+$name = "";
+$email = "";
+
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+    do {
+        
+        if (empty($_POST["name"])) {
+            $error = "Name is required.";
+            break;
+        }
+        $name = htmlspecialchars($_POST["name"]);
+
+        
+        if (!filter_var($_POST["email"], FILTER_VALIDATE_EMAIL)) {
+            $error = "Invalid email format.";
+            break;
+        }
+        $email = htmlspecialchars($_POST["email"]);
+
+        
+        $error = "Form submitted successfully!";
+    } while (false);
+}
+?>
