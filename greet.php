@@ -1,4 +1,15 @@
+<?php
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+    $username = $_POST['username'];
+    $password = $_POST['password'];
 
+    if ($username === $password) {
+        echo "Hello, $username! Welcome!";
+    } else {
+        echo "Invalid login. Username and password must be the same.";
+    }
+}
+?>
 
 <!DOCTYPE html>
 <html lang="en">
