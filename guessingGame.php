@@ -6,7 +6,7 @@ if (!isset($_SESSION['number'])) {
     $_SESSION['number'] = rand(1, 100);
 }
 
-// Initialize message variable
+
 $message = "";
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
@@ -19,10 +19,10 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             $message = "❌ Too high! Try again.";
         } else {
             $message = "🎉 Correct! You guessed the number.";
-            session_destroy(); // Reset game
+            session_destroy(); 
         }
     } elseif (isset($_POST['reset'])) {
-        session_destroy(); // Restart the game
+        session_destroy(); 
         header("Location: " . $_SERVER['PHP_SELF']);
         exit();
     }
