@@ -44,11 +44,11 @@ $matrix3 = [
     [1, 3]
 ];
 
-// Multiply matrices step by step
+
 $tempResult = multiplyMatrices($matrix1, $matrix2);
 $finalResult = multiplyMatrices($tempResult, $matrix3);
 
-// Print result
+
 echo "Product of matrices:\n";
 printMatrix($finalResult);
 ?>
