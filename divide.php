@@ -12,3 +12,21 @@ $matrix2 = array(
 
 // Result matrix
 $result = array();
+
+echo "<h3>Matrix Division (Element-wise)</h3>";
+
+for ($i = 0; $i < count($matrix1); $i++) {
+    for ($j = 0; $j < count($matrix1[0]); $j++) {
+        if ($matrix2[$i][$j] != 0) {
+            $result[$i][$j] = $matrix1[$i][$j] / $matrix2[$i][$j];
+        } else {
+            $result[$i][$j] = "Infinity"; // Avoid division by zero
+        }
+    }
+}
+
+// Print the result
+echo "<pre>";
+print_r($result);
+echo "</pre>";
+?>
