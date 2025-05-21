@@ -15,3 +15,19 @@ $matrix3 = array(
     array(11, 12)
 );
 
+// Result matrix
+$result = array();
+
+// Add the matrices
+for ($i = 0; $i < count($matrix1); $i++) {
+    for ($j = 0; $j < count($matrix1[0]); $j++) {
+        $result[$i][$j] = $matrix1[$i][$j] + $matrix2[$i][$j] + $matrix3[$i][$j];
+    }
+}
+
+// Display the result
+echo "<h3>Result of Adding Three Matrices:</h3>";
+echo "<pre>";
+print_r($result);
+echo "</pre>";
+?>
