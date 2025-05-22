@@ -1,7 +1,8 @@
 <?php
- $n=1;
- do{
-    echo"$n\n";
-    $n++;
- }while($n<=10);
- ?>
+$counter = 1;
+
+do {
+    echo "Number: $counter<br>";
+    $counter++;
+} while ($counter <= 5);
+?>
