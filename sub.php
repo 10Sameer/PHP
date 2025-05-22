@@ -16,3 +16,21 @@ $matrix2 = [
     [5, 4, 3, 2, 1]
 ];
 
+// Initialize result matrix
+$result = [];
+
+for ($i = 0; $i < 5; $i++) {
+    for ($j = 0; $j < 5; $j++) {
+        $result[$i][$j] = $matrix1[$i][$j] - $matrix2[$i][$j];
+    }
+}
+
+// Print the result
+echo "Result of Matrix Subtraction:<br>";
+foreach ($result as $row) {
+    foreach ($row as $value) {
+        echo $value . "\t";
+    }
+    echo "<br>";
+}
+?>
