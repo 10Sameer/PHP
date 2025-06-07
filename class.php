@@ -16,3 +16,9 @@ class Car {
     }
 }
 
+// Creating an object
+$myCar = new Car("Toyota", "Red");
+
+// Accessing a method
+echo $myCar->honk();
+?>
