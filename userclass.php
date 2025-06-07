@@ -28,3 +28,11 @@ class User {
     }
 }
 
+// Create a user
+$user1 = new User("Sameer", "sameerHero@gmail.com");
+
+// Use the class methods
+echo $user1->getProfile(); 
+echo "<br>";
+echo "Is Admin? " . $user1->isAdmin(); 
+?>
