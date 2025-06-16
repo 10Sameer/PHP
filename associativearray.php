@@ -33,3 +33,28 @@ $students = [
     ]
 ];
 
+// Function to calculate total, average and grade
+function getStudentReport($student) {
+    $marks = $student['marks'];
+    $total = array_sum($marks);
+    $average = $total / count($marks);
+
+    // Assign Grade
+    if ($average >= 90) {
+        $grade = "A+";
+    } elseif ($average >= 80) {
+        $grade = "A";
+    } elseif ($average >= 70) {
+        $grade = "B";
+    } elseif ($average >= 60) {
+        $grade = "C";
+    } else {
+        $grade = "F";
+    }
+
+    return [
+        "total" => $total,
+        "average" => $average,
+        "grade" => $grade
+    ];
+}
