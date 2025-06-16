@@ -1,7 +1,26 @@
 <?php
-$age=array("Manish"=>"35","Anish"=>"45","Messi"=>"36");
- foreach($age as $x => $x_value){
-    echo"key=".$x.",Value=".$x_value;
-    echo"\n";
- }
-?>
+// Associative Array with detailed student data
+$students = [
+    "Sameer" => [
+        "roll" => 1,
+        "class" => "12B",
+        "marks" => [
+            "Math" => 88,
+            "Science" => 90,
+            "English" => 84,
+            "Computer" => 95
+        ]
+    ],
+    "Messi" => [
+        "roll" => 2,
+        "class" => "12B",
+        "marks" => [
+            "Math" => 78,
+            "Science" => 82,
+            "English" => 80,
+            "Computer" => 85
+        ]
+    ],
+    
+];
+
