@@ -64,6 +64,9 @@ foreach ($students as $name => $details) {
     $report = getStudentReport($details);
     echo "Name: $name<br>";
     echo "Roll No: " . $details['roll'] . "<br>";
-
+    echo "Class: " . $details['class'] . "<br>";
+    echo "Total Marks: " . $report['total'] . "<br>";
+    echo "Average Marks: " . number_format($report['average'], 2) . "<br>";
+    echo "Grade: " . $report['grade'] . "<br><br>";
 }
 ?>
