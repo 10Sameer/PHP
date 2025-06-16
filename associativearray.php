@@ -21,6 +21,15 @@ $students = [
             "Computer" => 85
         ]
     ],
-    
+    "Ronaldo" => [
+        "roll" => 3,
+        "class" => "12B",
+        "marks" => [
+            "Math" => 65,
+            "Science" => 70,
+            "English" => 60,
+            "Computer" => 75
+        ]
+    ]
 ];
 
