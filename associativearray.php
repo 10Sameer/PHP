@@ -58,3 +58,12 @@ function getStudentReport($student) {
         "grade" => $grade
     ];
 }
+
+// Display student reports
+foreach ($students as $name => $details) {
+    $report = getStudentReport($details);
+    echo "Name: $name<br>";
+    echo "Roll No: " . $details['roll'] . "<br>";
+
+}
+?>
