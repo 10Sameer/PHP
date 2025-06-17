@@ -52,3 +52,11 @@ $bakery = [
     ]
 ];
 
+// 🔁 Display all items with their variants
+foreach ($bakery as $category => $items) {
+    echo strtoupper($category) . ":\n";
+    foreach ($items as $code => $details) {
+        echo "- " . $details['name'] . " (Stock: {$details['stock']})\n";
+        echo "  Price: $" . $details['price'] . "\n";
+  
+?>
