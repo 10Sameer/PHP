@@ -25,7 +25,19 @@ $bakery = [
             ]
         ]
     ],
- 
+    "cookies" => [
+        "butter_cookie" => [
+            "name" => "Butter Cookie",
+            "price" => 2.50,
+            "stock" => 30,
+            "ingredients" => ["butter", "flour", "vanilla"],
+            "variants" => [
+                "pack_6" => 2.50,
+                "pack_12" => 4.50,
+                "pack_24" => 8.00
+            ]
+        ]
+    ],
    
 ];
 
