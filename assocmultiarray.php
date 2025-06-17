@@ -58,5 +58,12 @@ foreach ($bakery as $category => $items) {
     foreach ($items as $code => $details) {
         echo "- " . $details['name'] . " (Stock: {$details['stock']})\n";
         echo "  Price: $" . $details['price'] . "\n";
-  
+        echo "  Ingredients: " . implode(", ", $details['ingredients']) . "\n";
+        echo "  Variants:\n";
+        foreach ($details['variants'] as $variant => $vprice) {
+            echo "    * " . ucfirst(str_replace("_", " ", $variant)) . ": $" . $vprice . "\n";
+        }
+        echo "\n";
+    }
+}
 ?>
