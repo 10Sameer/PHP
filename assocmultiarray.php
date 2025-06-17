@@ -13,6 +13,18 @@ $bakery = [
                 "large" => 20.99
             ]
         ],
+        "red_velvet" => [
+            "name" => "Red Velvet Cake",
+            "price" => 18.50,
+            "stock" => 8,
+            "ingredients" => ["flour", "butter", "red color", "cheese"],
+            "variants" => [
+                "half_kg" => 9.99,
+                "1_kg" => 18.50,
+                "2_kg" => 34.00
+            ]
+        ]
+    ],
  
    
 ];
