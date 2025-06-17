@@ -38,6 +38,17 @@ $bakery = [
             ]
         ]
     ],
-   
+    "bread" => [
+        "multigrain" => [
+            "name" => "Multigrain Bread",
+            "price" => 3.25,
+            "stock" => 20,
+            "ingredients" => ["wheat", "seeds", "yeast"],
+            "variants" => [
+                "half" => 1.75,
+                "full" => 3.25
+            ]
+        ]
+    ]
 ];
 
